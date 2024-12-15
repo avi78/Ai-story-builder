@@ -1,12 +1,19 @@
 "use client"
+import { ClerkProvider } from '@clerk/nextjs'
 import { NextUIProvider } from '@nextui-org/react'
 import React from 'react'
+import Header from './_components/Header'
 
-function Provider({children}:{children: React.ReactNode}) {
+function Provider({children}: {children: React.ReactNode}) {
   return (
-    <NextUIProvider>
+    <ClerkProvider>
+      <NextUIProvider>
+        {/* header */}
+        <Header />
         {children}
-    </NextUIProvider>
+      </NextUIProvider>
+    </ClerkProvider>
+    
   )
 }
 

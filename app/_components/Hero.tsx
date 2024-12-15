@@ -15,7 +15,7 @@ function Hero() {
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1, transition: { duration: 1 } }}
               transition={{ duration: 1 }}
-             className="lg:text-6xl md:text-3xl text-xl text-primary font-extrabold mb-3">
+             className="lg:text-6xl md:text-3xl text-xl text-primary font-extrabold mb-3 mt-6">
               Create enchanting stories for children in just minutes.
             </motion.h2>
             <motion.p
@@ -34,7 +34,7 @@ function Hero() {
               <Button
                 color="primary"
                 size="lg"
-                className="mt-5 font-bold text-xl p-8 hover:scale-x-110"
+                className="mt-5 font-bold text-xl p-8 hover:scale-x-110 mb-7"
               >
                 Create story
               </Button>
@@ -47,7 +47,7 @@ function Hero() {
           animate={{ x: 0, opacity: 1, transition: { duration: 1 }, scale: 1 }}
           transition={{ duration: 1 }}
           >
-            <Image src={"/hero.png"} alt="hero" width={800} height={400} />
+            <Image className='m-24' src={"/hero.png"} alt="hero" width={800} height={400} />
           </motion.div>
         </div>
       </div>
